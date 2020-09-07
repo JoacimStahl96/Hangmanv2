@@ -45,13 +45,13 @@ public class Hangmanv2 {
 
 	}
 
-	public static void letters() { // method for Char guessing ( single letter guessing )
-		String guess = input.next().toUpperCase();
+	public static void letters() { // method for Char guessing ( single letter guessing ) also shows where the right guessed char
+		String guess = input.next().toUpperCase();  // is placed. Asterisks covers the secret word.
 		String newasterisk = "";
 		for (int i = 0; i < word.length(); i++) {
-			if (word.charAt(i) == guess.charAt(0)) { // correct guess
+			if (word.charAt(i) == guess.charAt(0)) { 
 				newasterisk += guess.charAt(0);
-			} else if (asterisk.charAt(i) != '*') { // wrong guess
+			} else if (asterisk.charAt(i) != '*') { 
 				newasterisk += word.charAt(i);
 			} else {
 				newasterisk += "*";
