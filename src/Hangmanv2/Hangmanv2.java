@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class Hangmanv2 {
 
 	static String word = Wordlist.getWord(); // connects this class to a getter in the Wordlist class.
-	private static String asterisk = new String(new char[word.length()]).replace("\0", "*"); // Grabs and hides the
-																								// secret word in
-																								// asterisks
+	private static String asterisk = new String(new char[word.length()]).replace("\0", "*"); // Grabs and hides the secret word in asterisks
 	public static int counter = 0; // counter for the game
 	static Scanner input = new Scanner(System.in);
 
